@@ -1,0 +1,56 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spark-Test01",
+		"_postman_id": "5416fafd-1063-f6c7-78ba-f34abc3d8e6b",
+		"description": "# spark-Test01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9999/rdd",
+			"request": {
+				"url": "http://localhost:9999/rdd",
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "/rdd - GET"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9999/wordcount",
+			"request": {
+				"url": "http://localhost:9999/wordcount",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"inputFile\" : \"/home/sparktest/README.txt\",\r\n\t\"outputDirPath\" : \"/home/sparktest/wordcount\"\r\n}"
+				},
+				"description": "/rdd - GET"
+			},
+			"response": []
+		}
+	]
+}
