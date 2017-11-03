@@ -1,5 +1,10 @@
 # spark Test01
 
+### environment
+* Intellij
+* JDK 1.8
+* spark-2.2.0
+
 ### RESTful
 * /wordcount
     * description : spark workcount sample application
